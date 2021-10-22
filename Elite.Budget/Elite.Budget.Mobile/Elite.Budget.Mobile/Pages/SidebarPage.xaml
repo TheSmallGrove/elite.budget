@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Elite.Budget.Mobile.Pages.SidebarPage"
+             xmlns:model="clr-namespace:Elite.Budget.Mobile.Model"
+             xmlns:pages="clr-namespace:Elite.Budget.Mobile.Pages"
+             Title="Budget">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid Style="{StaticResource SidebarHeader}">
+                <Label Style="{StaticResource SidebarHeaderLabel}" Text="budget"></Label>
+            </Grid>
+            <ListView Style="{StaticResource SidebarList}" x:Name="listView" x:FieldModifier="public">
+                <ListView.ItemsSource>
+                    <x:Array Type="{x:Type model:SidebarMenuItem}">
+                        <model:SidebarMenuItem Title="Transactions" IconSource="todo.png" TargetType="{x:Type pages:TransactionsPage}" />
+                        <model:SidebarMenuItem Title="Budgets" IconSource="todo.png" TargetType="{x:Type pages:BugdetsPage}" />
+                        <model:SidebarMenuItem Title="Accounts" IconSource="todo.png" TargetType="{x:Type pages:AccountsPage}" />
+                        <model:SidebarMenuItem Title="Import" IconSource="reminders.png" TargetType="{x:Type pages:ImportPage}" />
+                    </x:Array>
+                </ListView.ItemsSource>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Style="{StaticResource SidebarListItem}" Padding="5,10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="30"/>
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Image Style="{StaticResource SidebarListItemIcon}" Source="{Binding IconSource}" />
+                                <Label Style="{StaticResource SidebarListItemText}" Grid.Column="1" Text="{Binding Title}" />
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
