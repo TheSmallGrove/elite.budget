@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elite.Budget.Mobile.Android
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Elite.Budget.Mobile", "Elite.Budget.Mobile\Elite.Budget.Mobile\Elite.Budget.Mobile.csproj", "{C7F694A1-FFF2-48CD-93BE-2ABEA25DF1DE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elite.Budget.Web", "Elite.Budget.Web\Elite.Budget.Web.csproj", "{EFE35D27-CDC8-4946-AF45-9885E471CD0E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{C7F694A1-FFF2-48CD-93BE-2ABEA25DF1DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7F694A1-FFF2-48CD-93BE-2ABEA25DF1DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7F694A1-FFF2-48CD-93BE-2ABEA25DF1DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFE35D27-CDC8-4946-AF45-9885E471CD0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFE35D27-CDC8-4946-AF45-9885E471CD0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFE35D27-CDC8-4946-AF45-9885E471CD0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFE35D27-CDC8-4946-AF45-9885E471CD0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
